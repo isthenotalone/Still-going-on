@@ -61,4 +61,66 @@ def dashboard():
     return f"<h2>Bem-vindo, {session['user']}!</h2><a href='/logout'>Sair</a>"@app.route("/logout")
 def logout():
     session.pop("user", None)
-    return redirect(url_for("login"))
+    return redirect(url_for("login"))# 🧠 Still-going-on
+
+Projeto web desenvolvido com Flask, SQLAlchemy e visualizações de dados para análise da pandemia COVID-19.
+
+## 🚀 Funcionalidades
+
+- Registo e login de utilizadores
+- Visualização de mapas de calor por região
+- Leitura de QR codes
+- Dashboard com dados de casos e mortes
+
+## 🛠️ Tecnologias Usadas
+
+- Python
+- Flask
+- SQLAlchemy
+- OpenCV (`cv2`)
+- Pyzbar
+- MySQL
+
+## 📦 Instalação
+
+```bash
+git clone https://github.com/isthenotalone/Still-going-on.git
+cd Still-going-on
+pip install -r requirements.txt
+python main.py# 🧠 Still-going-on
+
+Aplicação web desenvolvida com **Flask**, **SQLAlchemy** e visualizações interativas para análise da pandemia COVID-19. Criado por [Isthenotalone](https://github.com/isthenotalone), este projeto combina dados, mapas de calor, autenticação de utilizadores e leitura de QR codes.
+
+---
+
+## 🚀 Funcionalidades
+
+- 🔐 Registo e login de utilizadores com segurança (hash de palavra-passe)
+- 📊 Visualização de dados por região (casos, mortes, previsões)
+- 🌍 Mapas de calor gerados com `plotregions`
+- 📱 Leitura de QR codes com `pyzbar` e `cv2`
+- 🧠 Dashboard personalizado para cada utilizador
+
+---
+
+## 🛠️ Tecnologias Usadas
+
+- **Python 3**
+- **Flask**
+- **SQLAlchemy**
+- **OpenCV** (`cv2`)
+- **Pyzbar**
+- **MySQL**
+- **Werkzeug Security**
+
+---
+
+## 📦 Instalação
+
+1. Clona o repositório:
+```bash
+git clone https://github.com/isthenotalone/Still-going-on.git
+cd Still-going-on
+pip install -r requirements.txt
+python main.py ---
+
